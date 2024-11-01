@@ -1,0 +1,23 @@
+<h1 class="product_title entry-title" itemprop="name">{merchant_name} </h1>
+
+<img src="{merchant_logo}">
+
+<div itemprop="description">
+    {merchant_description} 
+</div>
+
+{for_each_offer_start}
+
+<div class="col-xs-3">
+    <h3>{offer_title}</h3>
+    <p>{offer_description}</p>
+    
+    <a class="btn btn-info" href="{offer_affiliate_url}">Add to chart</a>
+    
+    <p>Expire on {offer_end_date}</p>
+    
+</div>
+
+{for_each_offer_end}
+
+<a href="{merchant_url} ">Visit Offer</a>
